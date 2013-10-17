@@ -1,0 +1,29 @@
+<Context> 
+  <Resource 
+   name="jdbc/orcl" 
+   auth="Container"
+   type="javax.sql.DataSource"   
+   driverClassName="oracle.jdbc.driver.OracleDriver"   
+   url="jdbc:oracle:thin:@127.0.0.1:1521:orcl"
+   username="scott" 
+   password="tiger"
+   maxActive="200" 
+   maxIdle="100"/>  
+</Context>
+
+<!--
+<Context> 
+  <Resource 
+   name="jdbc/orcl" 
+   auth="Container"
+   type="javax.sql.DataSource"   
+   driverClassName="oracle.jdbc.driver.OracleDriver"   
+   url="jdbc:oracle:thin:@211.183.0.60:1521:orcl"
+   username="scott" 
+   password="tiger"
+   maxActive="200" 
+   maxIdle="100"/>  
+</Context>
+-->
+
+

@@ -1,0 +1,47 @@
+@CHARSET "UTF-8";
+#article_c{
+	margin-right:auto;
+	margin-left:auto;
+	width: 900px;
+	height: 550px;
+	margin-top: 30px;
+}
+.gal_img{
+	float:left;
+	width:100px;
+	height:100px;
+}
+
+.gal_img_Most{
+	width:300px;
+	height:300px;
+}
+
+#gal_cont{
+	width: 790px;
+	height: 350px;
+	
+	/* display: none; */
+}
+#gal_ct{
+	width:400px;
+}
+#boardcont_t{
+	border:1px solid skyblue;
+	border-radius:10px;
+	width:750px;
+	height:340px;
+	padding:3px;
+}
+#gal_list{
+	overflow-y:hidden; overflow-x:scroll;
+	padding:20px;
+	height:120px;
+}
+#gal_content{
+	width:400px;
+	height:80px;
+	overflow-x:hidden; overflow-y:scroll;
+	word-break:break-all;
+	padding:10px;
+}

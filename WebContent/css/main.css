@@ -1,0 +1,372 @@
+@CHARSET "UTF-8";
+body{
+padding:0;
+margin:0;
+background-image:url(../images/bg.jpg);
+/*background-size*/
+-webkit-background-size:100% 125%;
+   -moz-background-size:100% 125%;
+     -o-background-size:100% 125%;
+        background-size:100% 125%;
+background-repeat:no-repeat;
+}
+
+/* #rec{ 게시판 최신글 스크롤바
+	overflow-x:hidden; overflow-y:scroll;
+} */
+ 
+#main_wrap{
+	width:1024px; 
+	height: 880px;
+	margin-top:10px;
+	margin-right:auto;
+	margin-left:auto; 
+	border: 3px solid skyblue;
+	background-color: white;
+}
+
+#header{
+	width: 1017px;
+	height: 130px;
+	margin-left: auto; margin-right: auto;
+	margin-top: 10px;
+	background-image: url(../images/hd.jpg); 
+	position: relative;
+}
+
+#header ul li{
+	list-style:none; /*목록앞 점 없애기 */
+    float:left; /*목록 수직정렬을 수평정렬로 */
+    margin:70px 0 0 0;
+    padding:0 10px 0 0;/*안여백을 설정 
+    시계방향으로 위,오른쪽,아래쪽,왼쪽*/
+}
+
+/* 새로운 덩어리 생성 버튼 */
+
+    .new_d {
+        
+        -moz-box-shadow:inset 0px 1px 0px 0px #dcecfb;
+        -webkit-box-shadow:inset 0px 1px 0px 0px #dcecfb;
+        box-shadow:inset 0px 1px 0px 0px #dcecfb;
+        
+        background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #bddbfa), color-stop(1, #80b5ea));
+        background:-moz-linear-gradient(top, #bddbfa 5%, #80b5ea 100%);
+        background:-webkit-linear-gradient(top, #bddbfa 5%, #80b5ea 100%);
+        background:-o-linear-gradient(top, #bddbfa 5%, #80b5ea 100%);
+        background:-ms-linear-gradient(top, #bddbfa 5%, #80b5ea 100%);
+        background:linear-gradient(to bottom, #bddbfa 5%, #80b5ea 100%);
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#bddbfa', endColorstr='#80b5ea',GradientType=0);
+        
+        background-color:#bddbfa;
+        
+        -moz-border-radius:6px;
+        -webkit-border-radius:6px;
+        border-radius:6px;
+        
+        border:1px solid #84bbf3;
+        
+        display:inline-block;
+        color:#ffffff;
+        font-family:arial;
+        font-size:15px;
+        font-weight:bold;
+        padding:6px 14px;
+        text-decoration:none;
+        
+        text-shadow:0px 1px 0px #528ecc;
+        
+    }
+    .new_d:hover {
+        
+        background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #80b5ea), color-stop(1, #bddbfa));
+        background:-moz-linear-gradient(top, #80b5ea 5%, #bddbfa 100%);
+        background:-webkit-linear-gradient(top, #80b5ea 5%, #bddbfa 100%);
+        background:-o-linear-gradient(top, #80b5ea 5%, #bddbfa 100%);
+        background:-ms-linear-gradient(top, #80b5ea 5%, #bddbfa 100%);
+        background:linear-gradient(to bottom, #80b5ea 5%, #bddbfa 100%);
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#80b5ea', endColorstr='#bddbfa',GradientType=0);
+        
+        background-color:#80b5ea;
+    }
+    .new_d:active {
+        position:relative;
+        top:1px;
+    }
+    
+/* 자유게시판 버튼 */
+
+    .free_b {
+        
+        -moz-box-shadow:inset 0px 1px 0px 0px #dcecfb;
+        -webkit-box-shadow:inset 0px 1px 0px 0px #dcecfb;
+        box-shadow:inset 0px 1px 0px 0px #dcecfb;
+        
+        background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #bddbfa), color-stop(1, #80b5ea));
+        background:-moz-linear-gradient(top, #bddbfa 5%, #80b5ea 100%);
+        background:-webkit-linear-gradient(top, #bddbfa 5%, #80b5ea 100%);
+        background:-o-linear-gradient(top, #bddbfa 5%, #80b5ea 100%);
+        background:-ms-linear-gradient(top, #bddbfa 5%, #80b5ea 100%);
+        background:linear-gradient(to bottom, #bddbfa 5%, #80b5ea 100%);
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#bddbfa', endColorstr='#80b5ea',GradientType=0);
+        
+        background-color:#bddbfa;
+        
+        -moz-border-radius:6px;
+        -webkit-border-radius:6px;
+        border-radius:6px;
+        
+        border:1px solid #84bbf3;
+        
+        display:inline-block;
+        color:#ffffff;
+        font-family:arial;
+        font-size:15px;
+        font-weight:bold;
+        padding:6px 14px;
+        text-decoration:none;
+        
+        text-shadow:0px 1px 0px #528ecc;
+        
+    }
+    .free_b:hover {
+        
+        background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #80b5ea), color-stop(1, #bddbfa));
+        background:-moz-linear-gradient(top, #80b5ea 5%, #bddbfa 100%);
+        background:-webkit-linear-gradient(top, #80b5ea 5%, #bddbfa 100%);
+        background:-o-linear-gradient(top, #80b5ea 5%, #bddbfa 100%);
+        background:-ms-linear-gradient(top, #80b5ea 5%, #bddbfa 100%);
+        background:linear-gradient(to bottom, #80b5ea 5%, #bddbfa 100%);
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#80b5ea', endColorstr='#bddbfa',GradientType=0);
+        
+        background-color:#80b5ea;
+    }
+    .free_b:active {
+        position:relative;
+        top:1px;
+    }
+
+/* 메세지버튼 */
+
+    .m {
+        
+        -moz-box-shadow:inset 0px 1px 0px 0px #dcecfb;
+        -webkit-box-shadow:inset 0px 1px 0px 0px #dcecfb;
+        box-shadow:inset 0px 1px 0px 0px #dcecfb;
+        
+        background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #bddbfa), color-stop(1, #80b5ea));
+        background:-moz-linear-gradient(top, #bddbfa 5%, #80b5ea 100%);
+        background:-webkit-linear-gradient(top, #bddbfa 5%, #80b5ea 100%);
+        background:-o-linear-gradient(top, #bddbfa 5%, #80b5ea 100%);
+        background:-ms-linear-gradient(top, #bddbfa 5%, #80b5ea 100%);
+        background:linear-gradient(to bottom, #bddbfa 5%, #80b5ea 100%);
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#bddbfa', endColorstr='#80b5ea',GradientType=0);
+        
+        background-color:#bddbfa;
+        
+        -moz-border-radius:6px;
+        -webkit-border-radius:6px;
+        border-radius:6px;
+        
+        border:1px solid #84bbf3;
+        
+        display:inline-block;
+        color:#ffffff;
+        font-family:arial;
+        font-size:15px;
+        font-weight:bold;
+        padding:6px 10px;
+        text-decoration:none;
+        
+        text-shadow:0px 1px 0px #528ecc;
+        
+    }
+    .m:hover {
+        
+        background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #80b5ea), color-stop(1, #bddbfa));
+        background:-moz-linear-gradient(top, #80b5ea 5%, #bddbfa 100%);
+        background:-webkit-linear-gradient(top, #80b5ea 5%, #bddbfa 100%);
+        background:-o-linear-gradient(top, #80b5ea 5%, #bddbfa 100%);
+        background:-ms-linear-gradient(top, #80b5ea 5%, #bddbfa 100%);
+        background:linear-gradient(to bottom, #80b5ea 5%, #bddbfa 100%);
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#80b5ea', endColorstr='#bddbfa',GradientType=0);
+        
+        background-color:#80b5ea;
+    }
+    .m:active {
+        position:relative;
+        top:1px;
+    }
+
+
+
+/* #img{
+	position: absolute;
+	margin-top: 0;
+	left: 900px;  
+	top: 68px;
+	width: 80px;
+	height: 90px;
+	border: 1px solid black;
+} */
+
+#info{
+	position: absolute;
+	margin-top: 0;
+	right: 55px;
+	top: -15px;
+	width: 220px;
+	height: 90px;
+	/* border: 1px solid black; */
+	/* overflow:hidden; */
+	transition: all .4s ease-in .3s;
+	z-index:5
+}
+
+#moimes{
+	width: 900px;
+	height: 150px;
+	margin-left: auto; margin-right: auto;
+	margin-top: 30px;
+	/* border: 1px solid skyblue; */
+	
+}
+
+
+.next{
+	
+}
+
+.prev{
+	
+}
+
+#deonglist{
+	border:1px solid grey;
+	border-radius:15px;
+	margin-top: 10px; 
+	margin-left: auto; margin-right: auto;	
+}
+
+#deonglist li{
+	margin:10px;
+}
+
+#main_board{
+	overflow-x:hidden; overflow-y:scroll;
+	padding:5px;
+	width: 480px;
+	height: 500px;
+	margin-left: auto; margin-right: auto;
+	margin: 10px;
+	border: 1px solid skyblue;
+}
+
+#main_gallery{
+	overflow-x:hidden; overflow-y:scroll;
+	padding:5px;
+	width: 480px;
+	height: 500px;
+	margin-left: auto; margin-right: auto;
+	margin: 10px;
+	border: 1px solid skyblue;
+}
+
+#dngimg{
+	width:100px;
+	height:100px;
+	border-radius:20px;
+	border:1px groove pink;
+	/* box-shadow : 5px 5px 10px lightgrey; */
+	cursor:pointer;
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size:contain;
+	
+}
+
+
+.dngname_bg{
+	position:absolute;
+	background:skyblue;
+	opacity:0.7;	
+	width:102px;
+	height:30px;
+	top:65px;
+	
+	z-index:3
+}
+	
+.bottom{
+	background-color:white;
+	z-index:2
+}
+
+.dngname{
+	width:92px;
+	position:absolute;
+	color:white;
+	font-size:17px;
+	font-weight:bold;
+	top:65px;
+	text-overflow:ellipsis;
+	overflow: hidden;
+	white-space:nowrap;
+	z-index:4
+}
+
+/* .dngname td{
+	text-overflow:ellipsis;
+	overflow: hidden;
+	white-space:nowrap;
+} */
+
+.deong{
+	background-image:url(../images/bg_dng_list.png);
+	background-size:100% 100%;
+	width:625px;
+	height:127px;
+}
+.rcnt{
+	width:340px;
+	
+	/* border:thin solid red;  */
+	word-break:break-all;
+	text-overflow:ellipsis;
+	overflow: hidden;
+    font-size:12pt;
+    font-family:"맑은 고딕";
+	background-image:url(../images/bdcont_bg1.jpg);
+	background-size:100% 100%;
+	background-repeat:no-repeat;
+	padding:15px;
+	/* white-space:nowrap; */
+	
+}
+.rcnt_img{
+	width:80px;
+	height:80px;
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size:contain;
+}
+
+.gal_img{
+	float:left;
+	width:150px;
+	height:150px;
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size:contain;
+	border:2px solid grey;
+}
+::-webkit-scrollbar{
+	width: 8px; height: 8px; border: 3px solid #fff; 
+	}
+	
+/*  width:1024px; 폭 지정
+	height:960px; 높이
+	margin-left:auto; margin-right:auto; div 중앙정렬
+	margin-top:20px; 바깥 상단 여백 지정
+	border:1px solid blue; 테두리 실선 하늘색으로 그린다.
+	border-radius:20px; css3 에 새롭게 추가된 명령어로 테두리를 둥글게 */

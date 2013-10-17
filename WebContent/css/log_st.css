@@ -1,0 +1,55 @@
+@CHARSET "UTF-8";
+#logInfo_st{
+	/* color:#FF5E00; */
+	border:1px solid grey;
+	border-radius:10px;
+	font-weight:bold;
+	font-size:10pt;
+}
+#logInfo_st td{
+	height:19px;
+	border-radius:7px;
+	background-color:lightblue;
+	border-color:lightgrey;
+}
+#logInfo_t a:link{text-decoration:none; }/*하이퍼링크 된곳 밑줄없앰 */
+
+
+#ed{
+	border:1px solid;
+	border-radius:10px;
+	background:lightgrey;
+	width:350px;
+	height:450px;
+	margin-top:30px;
+	opacity:0;
+	display:none;
+	transition: all .5s ease-in;
+	z-index:100
+}
+
+#ed_pwd_check{
+	/* border:1px solid; */
+}
+
+#edit_check_t{
+	margin-left:auto;
+	margin-right:auto;
+	
+}
+
+#Edit_wrap{
+	margin-top:20px;
+	/* border:1px solid; */
+}
+
+#Edit_menu{
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#Edit_menu table{
+	margin-left:auto;
+	margin-right:auto;
+}
+

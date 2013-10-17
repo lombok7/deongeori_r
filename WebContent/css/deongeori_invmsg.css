@@ -1,0 +1,129 @@
+@CHARSET "UTF-8";
+
+body {
+	padding:0;
+	margin:0;
+	background: url(../images/email.png); 
+	background-repeat: no-repeat;
+}
+
+#invmsglistwrap {
+
+}
+
+#t_invmsglist, #t_invmsg {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 12px;
+	margin: 30px;
+	width: 480px;
+	text-align: left;
+	border-collapse: collapse;
+}
+
+#t_invmsg {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 12px;
+	margin: 30px;
+	width: 400px;
+	text-align: left;
+	border-collapse: collapse;
+}
+
+#t_invmsglist th {
+	font-family: "Comic Sans MS";
+	font-size: 14px;
+	font-weight: bold;
+	padding: 10px 8px;
+	color: #039;
+	width: 55px;
+	word-wrap: break-word; 
+	text-align: center;	
+}
+
+#t_invmsglist td {
+	padding: 8px;
+	color: #669;
+	width: 70px;
+	word-wrap: break-word;
+	/* 특수문자를 제외하고 강제로 줄바꿈  
+	가로사이즈나 엘리먼트에 맞춰서 강제 줄바꿈 해준다. 
+	word-break:break-all; 과 같은 결과물
+	모든 브라우저 적용 가능 */
+	text-align: center;
+}
+
+#t_invmsg td {
+	padding: 8px;
+	color: #669;
+	width: 70px;
+	text-align: right;
+}
+
+#t_invmsg td + td {
+	text-align: center;
+}
+
+#t_invmsglist th + th {
+	width: 131px;
+}
+
+#t_invmsglist td + td {
+	width: 170px;
+}
+
+#t_invmsglist th + th + th {
+	width: 149px;
+}
+
+#t_invmsglist td + td + td {
+	width: 180px;
+}
+
+#t_invmsglist th + th + th + th {
+	width: 73px;	
+}
+
+#t_invmsglist td + td + td + td {
+	width: 60px;
+	text-align: center;	
+}
+
+#t_invmsglist thead {
+	display: block;
+	width: 100%;
+}
+
+#t_invmsglist tbody {
+	display: block;
+	width: 100%;
+	height: 130px;
+	overflow-y: scroll;
+}
+
+#t_invmsglist tfoot td {
+	text-align: right;
+}
+
+
+
+#t_invmsglist .odd, #t_invmsg .odd
+{
+	background: #e8edff; 
+}
+
+#invmsgWrap {
+	width: 400px;
+	height: 100px;
+	background: skyblue;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 10px;
+}
+
+#t_invmsg {
+	margin-left: auto;
+	margin-right: auto;
+	
+	margin-top: 10px;
+	margin-bottom: auto;
+}

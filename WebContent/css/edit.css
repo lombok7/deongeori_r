@@ -1,0 +1,83 @@
+@CHARSET "UTF-8";
+#main_wrap{
+	width: 1024px;
+	height: 800px;
+	margin-left: auto; margin-right: auto;
+	margin-top: 53px;
+	border: 3px solid skyblue;
+}
+
+#header{
+	width: 1017px;
+	height: 100px;
+	margin-left: auto; margin-right: auto;
+	margin-top: 3px;
+	border: 1px solid skyblue;
+	text-align: 
+}
+
+#header ul li{
+	list-style:none; /*목록앞 점 없애기 */
+    float:left; /*목록 수직정렬을 수평정렬로 */
+    margin:30px 0 0 10px;
+    padding:0 50px 0 0;/*안여백을 설정 
+    시계방향으로 위,오른쪽,아래쪽,왼쪽*/
+}
+
+#img{
+	position: absolute;
+	margin-top: 0;
+	left: 900px;  
+	top: 68px;
+	width: 80px;
+	height: 90px;
+	border: 1px solid black;
+}
+
+#info{
+	position: absolute;
+	margin-top: 0;
+	right: 180px;
+	top: 70px;
+	width: 200px;
+	height: 85px;
+	border: 1px solid black;
+	
+}
+
+
+
+/*  width:1024px; 폭 지정
+	height:960px; 높이
+	margin-left:auto; margin-right:auto; div 중앙정렬
+	margin-top:20px; 바깥 상단 여백 지정
+	border:1px solid blue; 테두리 실선 하늘색으로 그린다.
+	border-radius:20px; css3 에 새롭게 추가된 명령어로 테두리를 둥글게 */
+#modify_w{
+	margin-top:15px;
+	margin-left:auto;
+	margin-rigft:auto;
+}
+#top{
+	font-size:20pt;
+	font-weight:bold;
+	margin:5px 0 80px 450px;
+}
+#edit{
+	margin:10px 0 0 50px;
+}
+#edit th{
+	border:1px solid black;
+	width:110px;
+	height:135px;	
+}
+#edit td{
+	margin:30px 0 0 300px;
+}
+#modify_t{
+	font-size:16pt;
+	margin:0px 0 0 300px;	
+}
+#modify_b{
+	margin:110px 0 0 810px;	
+}

@@ -1,0 +1,176 @@
+@CHARSET "UTF-8";
+body{
+	padding:0; margin:0;
+	background-image: url(../images/bg.jpg);
+	background-size: 100% 125%;
+	background-repeat: no-repeat;
+}
+
+#boardlist_t{
+	border-radius:5px;
+	margin-top: 10px;
+	margin-right:auto; 
+	margin-left:auto;
+	border:1px solid grey;
+	/* border-style: dotted;
+	border-color: black; */
+}
+
+#writer{
+	width: 100px;
+	height: 30px;
+	border: 1px solid black;
+}
+
+#article_c{
+	overflow-x:hidden; overflow-y:scroll;
+	margin-right:auto;
+	margin-left:auto;
+	width: 980px;
+	height: 550px;
+	margin-top: 40px;
+}
+
+/* 게시물 보기 */
+#view_writer{
+	float: left;
+	width: 150px;
+	height: 30px;
+	margin-top:5px;
+	margin-left:5px;
+	font-weight: bold;
+}
+
+#date{
+	margin-left: 300px;
+	margin-top: 6px;
+	font-size: 9px;
+}
+
+#cont{
+	background-color:lightgrey;
+	border-radius:5px;
+	padding:10px;
+	font-family:"맑은 고딕";
+	margin-right:auto;
+	border: 1px solid black;
+	width: 600px;
+	height: 80px;
+	overflow-x:hidden; overflow-y:scroll;
+}
+
+#like{
+	float: left;
+	margin-left: 3px;
+}
+
+#view_boardlist_menu{
+	float: left;
+	margin-left: 500px;
+}
+
+#best{
+	float: left;
+	width: 35px;
+	height: 35px;
+}
+
+#null{
+	height: 30px;
+}
+
+/* 게시물 작성 */
+#write_t{
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#write_w{
+	float: left;
+	width: 100px;
+	height: 30px;
+}
+
+#date{
+	float: left;
+	margin-left: 300px;
+	margin-top: 6px;
+	font-size: 9px;
+}
+
+#boardlist_menu{
+	margin-left: 480px;
+}
+
+/* 댓글 쓰기 영역 */
+#com_wrap{
+	margin-right:auto;
+	margin-left:auto;
+	width: 600px;
+	height: 30px;
+	background-color: #FFF2E6;
+}
+
+#com_writer{
+	font-weight: bold;
+	margin-top:5px;
+	margin-left:5px;
+	width: 80px;
+	height: 30px;
+	float: left;
+
+}
+
+#b{
+	float: right;
+	width: 43px;
+}
+
+#com_cont{
+	margin-right:auto;
+	margin-left:auto;
+	margin-top:2px;
+	float: left;
+	width: 448px;
+	height: 30px;
+}
+
+/* 댓글 보기 영역 */
+#rep{
+	margin-left:10px;
+	width: 600px;
+	float: left;
+	background-color: #FFF2E6;
+	font-size: 10pt;
+}
+
+#rep_w{
+	float: left;
+	width: 80px;
+	margin-left:20px;
+	margin-top:5px;
+}
+
+#rep_c{
+	float: right;
+	margin-right:auto;
+	margin-left:auto;
+	margin-top:3px;
+	float: left;
+	width: 380px;
+}
+
+#rep_date{
+	float: left;
+	width: 100px;
+	margin-left:10px;
+	margin-top:4px;
+}
+#no{
+	text-align:center;
+	margin-top:100px;
+}
+-webkit-scrollbar{
+	width: 8px; height: 8px; border: 3px solid #fff; 
+	}

@@ -1,0 +1,171 @@
+@CHARSET "UTF-8";
+#article_c{
+	margin-right:auto;
+	margin-left:auto;
+	width: 900px;
+	height: 550px;
+	margin-top: 30px;
+}
+.gal_img{
+	float:left;
+	width:200px;
+	height:200px;
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size:contain;
+	border:2px solid grey;
+}
+
+.gal_img_pop{
+	width:400px;
+	height:400px;
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size:contain;
+	
+}
+#gal_img_Most{
+	float:left;
+	width:200px;
+	height:200px;
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size:contain;
+	border:2px solid red;
+	
+}
+
+#gal_cont{
+	/* width: 790px;
+	height: 350px; */
+	
+	/* display: none; */
+}
+#gal_ct{
+	width:400px;
+}
+#boardcont_t{
+	border:1px solid skyblue;
+	border-radius:10px;
+	width:750px;
+	height:340px;
+	padding:3px;
+}
+#gal_list{
+	overflow-y:scroll; overflow-x:hidden;
+	padding:10px;
+	height:480px;
+	/* height:120px; */
+}
+#gal_content{
+	width:420px;
+	height:80px;
+	overflow-x:hidden; overflow-y:scroll;
+	word-break:break-all;
+	border:1px groove grey;
+	padding:5px;
+}
+
+#gal_cont_pop{
+	transition:all .3s ease-in;
+	position:absolute;
+	border:2px solid skyblue;
+	border-radius:10px;
+	width:900px;
+	height:450px;
+	margin-top:auto;
+	margin-left:auto;
+	margin-right:auto;
+	background:lightgrey;
+	display:none;
+	opacity:0;
+	font-family:"맑은 고딕", "sans-serif";
+	/* font-weight:bold;*/
+	z-index:100
+}
+
+
+.hoverbox
+{
+	cursor: default;
+	list-style: none;
+}
+
+
+.hoverbox .preview
+{
+	display: none;
+}
+
+.hoverbox li:hover .preview
+{
+	display: block;
+	position: absolute;
+	top: -33px;
+	left: -45px;
+	z-index: 1;
+	transition:all .3s ease-in;
+}
+
+
+.hoverbox li
+{
+	/* background: #eee;
+	border-color: #ddd #bbb #aaa #ccc;
+	border-style: solid; */
+	border-width: 1px;
+	color: inherit;
+	display: inline;
+	float: left;
+	/* margin: 3px;
+	padding: 5px; */
+	position: relative;
+}
+
+.hoverbox .preview
+{
+	transition:all .3s ease-in;
+	border-color: #000;
+	width: 260px;
+	height: 260px;
+	cursor:pointer;
+}
+
+#gal_name{
+	font-family:"맑은 고딕";
+	font-weight:bold;
+	font-size:18pt;
+	color:grey;
+}
+
+#gal_cont_pop_t td{
+	font-family:"맑은 고딕";
+	padding:5px;
+}
+
+#gal_cont_pop_t{
+	width:860px;
+}
+
+textarea {
+    vertical-align: middle;
+}
+
+#com_cont{
+	width:440px;
+	height:40px;	
+}
+
+#gal_rep_list{
+	overflow-y:scroll; overflow-x:hidden;
+	padding:10px;
+	height:120px;
+	border:1px groove grey;
+}
+.gal_rep_cont{
+	width:250px;
+	
+}
+#repp tr{
+	padding:2px;
+}

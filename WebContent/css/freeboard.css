@@ -1,0 +1,122 @@
+@CHARSET "UTF-8";
+/* board.css */
+
+/* 게시물 목록 UI 작성 */
+#article_c .boardlist_title {
+	margin: 100px 0 0 400px;
+	width: 200px;
+	padding: 3px;
+	text-align: center;
+	background: skyblue;
+	border-radius: 15px;
+	font-size: 30px; 
+}
+
+/* 게시물이 보여지는 테이블 영역 */
+#boardlist_t {	
+	padding: 0;
+	margin-top: 30px;
+	margin-bottom: 120px;
+	margin-left:auto;
+	margin-right:auto;
+	width: 700px;
+	padding: 20px;
+	border: 1px solid blue;
+	border-radius: 15px;
+	box-shadow: 10px 10px 10px #489CFF;	
+}
+
+/* 글쓰기 버튼 영역 디자인 */
+#boardList_menu {
+	margin: 30px 0 0 500px;
+}
+
+/* 게시판 글쓰기 폼 UI */
+#article_c .boardwrite_title { /* 제목 */
+	margin: 100px 0 0 400px;
+	width: 200px;
+	padding: 3px;
+	text-align: center;
+	background: skyblue;
+	border-radius: 15px;
+	font-size: 30px; 
+}
+
+#boardwrite_t {					/* 테이블 */
+	padding: 0;
+	margin-top: 30px;
+	margin-bottom: 120px;
+	margin-left:auto;
+	margin-right:auto;
+	width: 700px;
+	padding: 20px;
+	border: 1px solid blue;
+	border-radius: 15px;
+	box-shadow: 10px 10px 10px #489CFF;	
+}
+
+#boardwrite_t th {
+	background: pink;
+	border-radius: 10px;
+}
+
+#boardwrite_menu {				/* 버튼 영역 */
+	margin: 20px 0 0 300px;
+}
+
+/* 게시물 내용 보기 UI */
+#article_c .boardcont_title {
+	margin: 100px 0 0 400px;
+	width: 200px;
+	padding: 3px;
+	text-align: center;
+	background: skyblue;
+	border-radius: 15px;
+	font-size: 30px; 
+}
+
+#boardcont_t {
+	padding: 0;
+	margin-top: 30px;
+	margin-bottom: 120px;
+	margin-left:auto;
+	margin-right:auto;
+	width: 700px;
+	padding: 20px;
+	border: 1px solid blue;
+	border-radius: 15px;
+	box-shadow: 10px 10px 10px #489CFF;
+
+#boardcont_t th {
+	width: 60px;
+	background: pink;
+	border-radius: 10px;
+}
+
+#boardcont_menu {
+	margin: 25px 0 0 270px;
+}
+
+/* 게시물 삭제 UI */
+#article_c .boardDel_title {
+	margin: 100px 0 0 260px;	/* 상, 우, 하, 좌 */
+	width: 180px;
+	background: pink;
+	border-radius: 25px;
+	box-shadow: blue;
+	text-align: center;
+	font-size: 20px;
+}
+
+#boardDel_t {
+	margin:30px 0 0 130px;
+}
+
+#boardDel_t th {
+	background: skyblue;
+	border-radius: 15px;	
+}
+
+#boardDel_menu {
+	margin: 20px 0 0 500px;
+}
